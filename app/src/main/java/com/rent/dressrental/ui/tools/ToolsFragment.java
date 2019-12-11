@@ -43,7 +43,7 @@ public class ToolsFragment extends Fragment {
         rate.add("Rs.450");
         // addRates(rate);
         setupRV(recyclerView);
-        recyclerView.setAdapter(new MyAdapter(img,rate,getContext()));
+        recyclerView.setAdapter(new MyAdapter(img,rate,getContext(),"women"));
         return root;
     }
     private void setupRV(RecyclerView recyclerView) {
