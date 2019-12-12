@@ -42,11 +42,16 @@ public class MainActivity extends AppCompatActivity {
             passwordEditText.setError(getString(R.string.shr_error_password));
         } else {
             passwordEditText.setError(null);
-            startActivity(new Intent(MainActivity.this,Signup.class));// Clear the error
+            startActivity(new Intent(MainActivity.this,Home.class));// Clear the error
         }
     }
 
     private boolean isPasswordValid(@Nullable Editable text) {
         return text != null && text.length() >= 5;
+    }
+
+    public void signup(View view) {
+        startActivity(new Intent(MainActivity.this,Signup.class));// Clear the error
+
     }
 }
